@@ -24,6 +24,31 @@ header{
   z-index: 10;
 }
 
+
+/* 올라가기 버튼 */
+a#MOVE_TOP_BTN {
+  position: fixed;
+  color: #fff;
+  right: 2%;
+  bottom: 50px;
+  display: none;
+  z-index: 999;
+  font-weight: 300;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:#2d2d2d;;
+  text-align: center;
+  line-height:60px;
+}
+
+a#MOVE_TOP_BTN:hover{
+  background-color: #96b2d0;
+  transition: 0.8s;
+}
+
+
+
 nav{
   width: 1200px;
   height: inherit;
@@ -64,20 +89,9 @@ nav{
 }
 
 #gnb li a:hover:before{
-  width: 100%;}
-
-/*.sub_menu li a:hover{color: rgb(229, 44, 225);}*/
-
-/*
-ul{
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+  width: 100%;
 }
-*/
+
 
 /* Body___________________ */
 
@@ -95,23 +109,7 @@ main{
   
 }
 
-/* Fadein fadeout slide images */
 
-/* div.hero-container div.fadeShow{
-  position:relative;
-  height:400px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-
-.fadeShow img{ 
-  width:1200px;
-  position:absolute;
-  min-width: 1024px;
-}
-
-.fadeShow .active{ z-index:1; } */
 
 
 /* Main Visual */
@@ -164,19 +162,6 @@ h1{
   color: #fff;
   margin-bottom: 30px;
 }
-
-/* 재생버튼 */
-/* #b_control { position:relative; }
-#b_bt a { opacity:0.5; transition:all 1s ease; }
-#b_bt a:hover { opacity:1; }
-#b_bt a:nth-child(1) { position:absolute; left:30px; top:500px; }
-#b_bt a:nth-child(2) { position:absolute; right:30px; top:500px;}
-
-#b_control {  position:absolute; left:45px; top:880px; }
-#b_control a { margin: 0 5px; } */
-
-
-
 
 
 
@@ -442,23 +427,27 @@ h1{
   transition: 0.6s;
 }
 
+
 /* 더보기 */
 .b_more_btn {
-  margin-bottom: 90px;
+  width: 660px; 
+  margin: 20px 0 90px 0;
   padding-top:10px;
+  text-align: center;
+  line-height:80px;
   
 }
 
 .btn_bg {
-  width: 70px;
-  height: 70px;
+  width: 80px; 
+  height: 80px;
   border-radius: 50%;
   background-color: #2d2d2d;
   font-size:60px; 
   font-weight: 100;
   color: rgb(146, 146, 146);
   text-align: center;
-  
+  margin: 0 auto;
 }
 
 .btn_bg:hover{
@@ -623,7 +612,10 @@ h1{
   margin-right: -132px;
 }
 
-.bottom_menu a:hover{color: #575757;}
+.bottom_menu a:hover{
+  color: #575757;
+  transition: 0.8s;
+}
 
 
 
@@ -672,16 +664,7 @@ h1{
   border: 1px solid #a6a6a6;
 
 }
-/* 
-.all_fam{
-  display: inline-block;
-  width: 170px;
-  height: 40px;
-  line-height: 39px;
-  text-align: center;
-  background:#7104fa;
-}
- */
+
 
 .fam_div:first-child:hover{
   width: 170px;

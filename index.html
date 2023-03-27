@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@500;600;700&family=Raleway:wght@100;200;300;500;700&display=swap" rel="stylesheet">
@@ -8,12 +9,6 @@
   <link rel="stylesheet" href="css/style.css">
   <title>HYBE</title>
 
-  <!-- Javascript -->
-  <script src="js/jquery.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-  <script src="dist/jquery.fadethis.min.js"></script>
-  <script>$(window).fadeThis(.slide_left01);</script>
 </head>
 <body>
   
@@ -50,22 +45,6 @@
       
 
 
-      <!-- 전환이미지 -->
-      <!-- <div class="main_image">
-        <h1>WE <br> BELIVE IN <br> MUSIC</h1>
-        <div class="hero-container">
-          <div class="fadeShow">
-              <a href="#"><img class="active" src="images/slide1.png" alt="image1" /></a>
-              <a href="#"><img src="images/slide2.png" alt="image2" /></a>
-              <a href="#"><img src="images/slide3.png" alt="image3" /></a>
-          </div>
-        </div>
-    </div> -->
-    
-
-
-
-
     </main>
 
     <section>
@@ -75,18 +54,7 @@
         <h2>아티스트</h2>
           <div class="text_line"><a href="#none">More →<a></div>
         <!-- <a href="#none">→ Read more</a> -->
-        </div>
-                
-        <!-- 재생 멈춤 버튼 -->
-        <!-- <div id="b_control">
-          <a href="#play" class="play"><img src="images/play_btn.png" alt="재생" /></a>
-          <a href="#stop" class="stop"><img src="images/stop_btn.png"  alt="멈춤" /></a>
-        </div>
-        <div id="b_bt">
-          <a href="#left" class="left"><img src="images/left_btn.png" alt="이전 배너이미지" /></a>
-          <a href="#right" class="right"><img src="images/right_btn.png" alt="다음 배너이미지" /></a>
-        </div> -->
-
+        </div>                
         
         <div class="video_list">
           <div class="video">
@@ -249,9 +217,7 @@
 
     </section>
 
-    <!-- Body -->
 
-    
 
 
 
@@ -300,5 +266,32 @@
 
 
   </div>
+  <!-- TOP BTN[S] -->
+	<a id="MOVE_TOP_BTN" href="#">TOP</a>
+
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script>
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('#MOVE_TOP_BTN').fadeIn();
+            } else {
+                $('#MOVE_TOP_BTN').fadeOut();
+            }
+        });
+        
+        $("#MOVE_TOP_BTN").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
+    });
+	</script>
+<!-- TOP BTN[E] -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+
 </body>
 </html>
